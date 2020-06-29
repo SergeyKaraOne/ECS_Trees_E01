@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Consola Mono';
+  src: local('Consola Mono'), local('ConsolaMono'), url('../fonts/ConsolaMono.woff2') format('woff2'), url('../fonts/ConsolaMono.woff') format('woff'), url('../fonts/ConsolaMono.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Consola Mono';
+  src: local('Consola Mono Bold'), local('ConsolaMono-Bold'), url('../fonts/ConsolaMono-Bold.woff2') format('woff2'), url('../fonts/ConsolaMono-Bold.woff') format('woff'), url('../fonts/ConsolaMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GNUTypewriter';
+  src: local('GNUTypewriter'), url('../fonts/GNUTypewriter.woff2') format('woff2'), url('../fonts/GNUTypewriter.woff') format('woff'), url('../fonts/GNUTypewriter.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*! ---------------------------------------------------------- */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  position: static;
+}
+
+#ECSTreesvg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* height: 10px; */
+  /* width: 10px; */
+}
+
+#container {
+  padding: 10px;
+  min-width: 440px;
+  display: inline-block;
+}
+
+/*! ---------------------------------------------------------- */
+
+#container-header {
+  height: 120px;
+  width: auto;
+  border-radius: 15px 15px 0 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+#todaydate {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 26px;
+  font-family: 'Consola Mono';
+}
+
+/*! ---------------------------------------------------------- */
+
+#treebox {
+  padding-left: 20px;
+  border-radius: 0 0 15px 15px;
+  background-color: cadetblue;
+  min-width: max-content;
+}
+
+#treebox ol {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+}
+
+#treebox li {
+  padding: 5px 0px;
+}
+
+#treebox .node-form {
+  padding: 5px;
+  margin-right: 40px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'GNUTypewriter';
+  text-transform: lowercase;
+}
+
+#treebox .node-form-data {
+  background-color: darkorange;
+  width: 120px;
+  display: inline-block;
+  white-space: pre-line;
+  /* height: 20px; */
+}
+
+#treebox .node-add, #treebox .node-del {
+  background-color: black;
+  color: white;
+  width: 20px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+img {
+  height: auto;
+}
